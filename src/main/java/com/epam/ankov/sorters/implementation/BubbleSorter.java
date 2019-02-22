@@ -4,6 +4,8 @@ import com.epam.ankov.sorters.AbstractSorter;
 
 public class BubbleSorter extends AbstractSorter {
 
+    private static final String ALGORITHM_NAME = "Bubble Sorting";
+
     @Override
     public int[] sort(int[] initial) {
         cloneArray(initial);
@@ -19,6 +21,6 @@ public class BubbleSorter extends AbstractSorter {
 
     @Override
     public String getAlgorithmName() {
-        return "Bubble Sorting";
+        return ALGORITHM_NAME;
     }
 }

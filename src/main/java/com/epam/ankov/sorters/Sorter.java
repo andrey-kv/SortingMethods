@@ -11,4 +11,6 @@ public interface Sorter {
     static String ArrayToString(int[] array) {
         return Arrays.stream(array).mapToObj(Objects::toString).collect(Collectors.joining(", "));
     }
+
+    void isNotShowInfo(boolean b);
 }

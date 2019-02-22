@@ -4,6 +4,8 @@ import com.epam.ankov.sorters.AbstractSorter;
 
 public class OddEvenSorter extends AbstractSorter {
 
+    private static final String ALGORITHM_NAME = "Odd–even Sorting";
+
     @Override
     public int[] sort(int[] initial) {
         cloneArray(initial);
@@ -22,6 +24,6 @@ public class OddEvenSorter extends AbstractSorter {
 
     @Override
     public String getAlgorithmName() {
-        return "Odd–even Sorting";
+        return ALGORITHM_NAME;
     }
 }

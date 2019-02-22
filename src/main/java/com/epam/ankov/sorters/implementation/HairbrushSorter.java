@@ -4,7 +4,8 @@ import com.epam.ankov.sorters.AbstractSorter;
 
 public class HairbrushSorter extends AbstractSorter {
 
-    public static final double REDUCE_FACTOR = 1.247;
+    private static final double REDUCE_FACTOR = 1.247;
+    private static final String ALGORITHM_NAME = "Hairbrush Sorting";
 
     @Override
     public int[] sort(int[] initial) {
@@ -31,6 +32,6 @@ public class HairbrushSorter extends AbstractSorter {
 
     @Override
     public String getAlgorithmName() {
-        return "Hairbrush Sorting";
+        return ALGORITHM_NAME;
     }
 }

@@ -4,6 +4,8 @@ import com.epam.ankov.sorters.AbstractSorter;
 
 public class ShakerSorter extends AbstractSorter {
 
+    private static final String ALGORITHM_NAME = "Shaker Sorting";
+
     @Override
     public int[] sort(int[] initial) {
         cloneArray(initial);
@@ -33,6 +35,6 @@ public class ShakerSorter extends AbstractSorter {
 
     @Override
     public String getAlgorithmName() {
-        return "Shaker Sorting";
+        return ALGORITHM_NAME;
     }
 }

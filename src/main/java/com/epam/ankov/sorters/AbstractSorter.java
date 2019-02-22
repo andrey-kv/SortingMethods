@@ -4,6 +4,12 @@ public abstract class AbstractSorter implements Sorter {
 
     protected int operationCount;
     protected int[] intData;
+    protected boolean notShowInfo = false;
+
+    @Override
+    public void isNotShowInfo(boolean notShowInfo) {
+        this.notShowInfo = notShowInfo;
+    }
 
     protected void cloneArray(int[] initial) {
         intData = new int[initial.length];
@@ -32,6 +38,9 @@ public abstract class AbstractSorter implements Sorter {
     }
 
     protected void showInfo(int pass, String addInfo) {
+        if (notShowInfo) {
+            return;
+        }
         if (!addInfo.isEmpty()) {
             addInfo = ", " + addInfo;
         }
