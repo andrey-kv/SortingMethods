@@ -25,6 +25,7 @@ public class SorterComparision {
         execute(initial, new ShakerSorter());
         execute(initial, new HairbrushSorter());
         execute(initial, new OddEvenSorter());
+        execute(initial, new InsertionSorter());
         execute(initial, new NativeSorter());
     }
 

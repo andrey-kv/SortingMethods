@@ -4,7 +4,7 @@ public abstract class AbstractSorter implements Sorter {
 
     protected int operationCount;
     protected int[] intData;
-    protected boolean notShowInfo = false;
+    private boolean notShowInfo = false;
 
     @Override
     public void isNotShowInfo(boolean notShowInfo) {
@@ -24,13 +24,15 @@ public abstract class AbstractSorter implements Sorter {
         }
     }
 
-   protected void compareAnsSwapCells(int idx1, int idx2) {
+   protected boolean compareAnsSwapCells(int idx1, int idx2) {
         if (intData[idx1] > intData[idx2]) {
             int buffer = intData[idx2];
             intData[idx2] = intData[idx1];
             intData[idx1] = buffer;
             operationCount++;
+            return true;
         }
+        return false;
     }
 
     protected void showInfo(int pass) {
