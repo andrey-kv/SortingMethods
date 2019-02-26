@@ -12,5 +12,5 @@ public interface Sorter {
         return Arrays.stream(array).mapToObj(Objects::toString).collect(Collectors.joining(", "));
     }
 
-    void isNotShowInfo(boolean b);
+    void notShowInfo(boolean b);
 }

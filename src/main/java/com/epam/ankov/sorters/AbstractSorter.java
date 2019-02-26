@@ -7,7 +7,7 @@ public abstract class AbstractSorter implements Sorter {
     private boolean notShowInfo = false;
 
     @Override
-    public void isNotShowInfo(boolean notShowInfo) {
+    public void notShowInfo(boolean notShowInfo) {
         this.notShowInfo = notShowInfo;
     }
 
